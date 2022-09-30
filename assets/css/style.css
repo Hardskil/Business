@@ -1,0 +1,524 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;500;700&display=swap");
+*::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.bd-grid {
+  display: grid;
+}
+
+.main-container {
+  max-width: 1196px;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: #dd3610;
+  padding: 5px 70px;
+  color: #f0dede;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.transparent {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.colored {
+  color: #dd3610;
+}
+
+.container {
+  position: relative;
+}
+
+.logo_link {
+  cursor: pointer;
+}
+
+.header {
+  padding-top: 40px;
+}
+
+.main_sec {
+  background: url(../img/main-bg.jpg) 0 0/100% no-repeat;
+  height: 650px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.user_block {
+  background-color: #fff;
+  padding: 10px 25px;
+  border-radius: 26.5px;
+}
+
+.user_btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.dropbtn {
+  background-color: #fff;
+}
+
+.dropdown {
+  position: relative;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 110px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.card {
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(110, 47, 47, 0.1);
+  top: 0;
+  left: 10%;
+  margin-top: 380px;
+  transform: translate(-10%);
+  padding: 60px 60px;
+  background-color: #fff;
+  max-width: 540px;
+}
+.card_title {
+  font-size: 39px;
+  font-weight: 700;
+  font-family: "Merriweather", serif;
+}
+.card_subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.services {
+  padding-top: 400px;
+}
+
+.serv_row {
+  grid-template-columns: repeat(auto-fit, minmax(386px, 1fr));
+  -moz-column-gap: 19px;
+       column-gap: 19px;
+}
+.serv_text {
+  padding-top: 88px;
+}
+.serv_columns {
+  max-width: 390px;
+}
+.serv_title {
+  font-family: "Merriweather", serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+.serv_sub {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+.serv_sub_sub {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.facilities_title {
+  font-size: 36px;
+  font-family: "Merriweather", serif;
+  margin-bottom: 100px;
+  padding-top: 235px;
+}
+
+.fac_row {
+  grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+}
+.fac_columns {
+  max-width: 275px;
+}
+.fac_title {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Merriweather", serif;
+}
+.fac_subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+}
+.fac_sub_sub {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.join {
+  max-width: 325px;
+}
+.join_title {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Merriweather", serif;
+}
+.join_subtitle {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  padding-bottom: 48px;
+}
+
+.community {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 263px;
+  flex-wrap: wrap;
+}
+
+.comm_row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.comm_title {
+  font-weight: 700;
+  font-family: "Merriweather", serif;
+  font-size: 24px;
+}
+.comm_subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.comm_sub {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+.advant_columns {
+  max-width: 386px;
+}
+
+.advantages {
+  padding-bottom: 250px;
+}
+
+.advant {
+  padding-bottom: 30px;
+}
+
+.main_row {
+  display: flex;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main_row:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #3d3b3b;
+}
+
+.footer {
+  padding-top: 90px;
+  background-color: #ece2e2;
+}
+.footer_row {
+  display: flex;
+  -moz-column-gap: 120px;
+       column-gap: 120px;
+  flex-wrap: wrap;
+}
+.footer_logo_text {
+  max-width: 305px;
+}
+.footer_title {
+  margin: 0;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+.footer_bigtitle {
+  margin-top: 16px;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 48px;
+}
+.footer_links {
+  display: block;
+}
+.footer_about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 28px;
+}
+
+.list_title {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Merriweather", serif;
+}
+
+.footer_links {
+  color: #000;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 40px;
+}
+
+.about_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+
+.about_links {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+
+@media screen and (max-width: 1025px) {
+  .nav {
+    padding: 0 20px;
+  }
+
+  .serv_row {
+    padding: 0 20px;
+    justify-items: center;
+  }
+
+  .facilities {
+    padding: 0 20px;
+    justify-items: center;
+  }
+
+  .community {
+    padding: 50px 20px 0 20px;
+  }
+
+  .join {
+    padding-bottom: 70px;
+  }
+
+  .serv_columns {
+    padding-top: 50px;
+  }
+
+  .fac_row {
+    gap: 50px;
+  }
+
+  .advant {
+    padding-bottom: 0;
+  }
+
+  .advantages {
+    padding: 20px;
+  }
+
+  .main_row {
+    padding: 70px 20px 0 20px;
+  }
+}
+@media screen and (max-width: 993px) {
+  .main-container {
+    max-width: 993px;
+  }
+
+  .advant {
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 769px) {
+  .container {
+    text-align: center;
+  }
+
+  .serv_columns {
+    padding: 200px 50px 0 50px;
+  }
+
+  .fac_columns {
+    padding-top: 60px;
+  }
+
+  .comm_columns {
+    padding-top: 50px;
+  }
+
+  .advant_columns {
+    padding-top: 50px;
+  }
+
+  .advantages {
+    padding-bottom: 60px;
+  }
+
+  .community {
+    padding-top: 70px;
+    display: grid;
+    justify-items: center;
+  }
+
+  .facilities_title {
+    padding-top: 70px;
+  }
+
+  .footer_about {
+    display: block;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .about_links {
+    display: block;
+  }
+
+  .footer_logo_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+  .footer_row {
+    justify-content: center;
+    gap: 70px;
+  }
+
+  .comm_row {
+    justify-content: center;
+  }
+
+  .fac_row {
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+
+  .join {
+    display: grid;
+    justify-items: center;
+  }
+
+  .card {
+    margin-top: 90px;
+    left: 15%;
+    background-color: rgba(1, 1, 1, 0.3);
+    color: #afaeae;
+    display: grid;
+  }
+
+  .services {
+    padding-top: 30px;
+  }
+
+  .serv_row {
+    display: grid;
+    justify-items: center;
+  }
+
+  .header {
+    padding: 20px;
+  }
+
+  .main_row {
+    justify-content: center;
+  }
+
+  .main_sec {
+    background: url(../img/main-bg.jpg) 80% 100%/cover no-repeat;
+  }
+
+  .advantages {
+    padding: 50px;
+  }
+
+  .facilities {
+    padding: 50px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .serv_columns {
+    padding-top: 400px 50px 0 50px;
+  }
+
+  .footer_container {
+    width: 100%;
+  }
+}
