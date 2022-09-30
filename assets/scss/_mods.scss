@@ -1,0 +1,23 @@
+.bd-grid{
+    display: grid;
+}
+.main-container{
+    max-width: 1196px;
+    margin: 0 auto;
+}
+.btn{
+    background-color: $main-color;
+    padding: 5px 70px;
+    color: rgb(240, 222, 222);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.transparent{
+    color: $transparent;
+}
+.colored{
+    color: $main-color;
+}

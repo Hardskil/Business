@@ -1,0 +1,424 @@
+@import'resets';
+@import 'variables';
+@import 'mods';
+@import 'fonts';
+
+
+.container{
+    position: relative;
+}
+.logo_link{
+    cursor: pointer;
+}
+.header{
+    padding-top: 40px;
+}
+// ========================== section_1=================================
+.main_sec{
+    background: url(../img/main-bg.jpg) 0 0  / 100% no-repeat;
+    height: 650px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+.user_block{
+    background-color: #fff;
+    padding: 10px 25px;
+    border-radius: 26.5px;
+}
+.user_btn{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.dropbtn {
+    background-color: #fff;
+}
+
+.dropdown {
+    position: relative;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: $transparent;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 110px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+// ==========================section_2=======================
+.card{
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(110, 47, 47, 0.1);
+    top: 0;
+    left: 10%;
+    margin-top: 380px;
+    transform: translate(-10%);
+    padding: 60px 60px;
+    background-color: #fff;
+    max-width: 540px;
+    &_title{
+        font-size: $bigest;
+        font-weight: $bold;
+        font-family: $main-font;
+    }
+    &_subtitle{
+        font-size: $mediumest;
+        font-weight: $medium-weight;
+        font-family: $sub-font;
+    }
+}
+.btn_title{
+    font-family: $sub-font;
+    font-size: $small;
+    font-weight: $bold;
+}
+// =======================================section_3============================
+.services{
+    padding-top: 400px;
+}
+.serv{
+    &_row{
+      grid-template-columns: repeat(auto-fit, minmax(386px, 1fr));
+      column-gap: 19px;
+    }
+    &_text{
+        padding-top: 88px;
+    }
+    &_columns{
+        max-width: 390px;
+    }
+    &_title{
+        font-family: $main-font;
+        font-size: $medium;
+        font-weight: $bold;
+    }
+    &_sub{
+        font-size: $smallest;
+        font-weight: $medium-weight;
+        font-family: $sub-font;
+    }
+    &_sub_sub{
+        font-family: $sub-font;
+        font-size: $small;
+        font-weight: $bold;
+    }
+}
+// ==============================section_4==================================
+.facilities_title{
+    font-size: $big;
+    font-family: $main-font;
+    margin-bottom: 100px;
+    padding-top: 235px;
+}
+.fac{
+    &_row{
+        grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+    }
+    &_columns{
+        max-width: 275px;
+    }
+    &_title{
+        font-size: $md;
+        font-weight: $bold;
+        font-family: $main-font;
+    }
+    &_subtitle{
+        font-size: $ultra-small;
+        font-weight: $medium-weight;
+        font-family: $sub-font;
+        color: $transparent;
+    }
+    &_sub_sub{
+        font-family: $sub-font;
+        font-size: $small;
+        font-weight: $bold;
+
+    }
+}
+
+.join{
+    max-width: 325px;
+    &_title{
+        font-size: $big;
+        font-weight: $bold;
+        font-family: $main-font;
+    }
+    &_subtitle{
+        font-size: $small;
+        font-family: $sub-font;
+        color: $transparent;
+        padding-bottom: 48px;
+    }
+}
+// ==========================================section_5====================================
+.community{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 263px;
+    flex-wrap: wrap;
+}
+.comm{
+    &_row{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    &_title{
+        font-weight: $bold;
+        font-family: $main-font;
+        font-size: $medium;
+    }
+    &_subtitle{
+        font-family: $sub-font;
+        font-size: $ultra-small;
+        color: $transparent;
+    }
+    &_sub{
+        font-family: $sub-font;
+        font-size: $small;
+    }
+}
+.advant_columns{
+    max-width: 386px;
+}
+.advantages{
+    padding-bottom: 250px;
+}
+.advant{
+    padding-bottom: 30px;
+}
+.main_row{
+   display: flex;
+   column-gap: 50px;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.main_row:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #3d3b3b;
+}
+.footer{
+    padding-top: 90px;
+    background-color: $footer-color;
+    &_row{
+        display: flex;
+        column-gap: 120px;
+        flex-wrap: wrap;
+    }
+    &_logo_text{
+        max-width: 305px;
+    }
+    &_title{
+        margin: 0;
+        font-family: $main-font;
+        font-weight: $bold;
+        font-size: $medium;
+    }
+    &_bigtitle{
+        margin-top: 16px;
+        font-family: $main-font;
+        font-weight: $bold;
+        font-size: $huge;
+    }
+    &_links{
+        display: block;
+    }
+    &_about{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 28px;
+    }
+}
+.list_title{
+    font-size: $small;
+    font-weight: $bold;
+    font-family: $main-font;
+}
+.footer_links{
+    color: #000;
+    font-size: $ultra-small;
+    font-family: $sub-font;
+    line-height: 40px;
+}
+
+
+.about_title{
+    font-family: $sub-font;
+    font-size: $ultra-small;
+    margin: 0;
+}
+.about_links{
+    font-family: $sub-font;
+    font-size: $ultra-small;
+    color: #000;
+
+}
+// =================================1025px=====================
+@media screen and (max-width: 1025px){
+    .nav{
+        padding: 0 20px;
+    }
+    .serv_row{
+        padding: 0 20px;
+        justify-items: center;
+    }
+    .facilities{
+        padding: 0 20px;
+        justify-items: center;
+    }
+    .community{
+        padding: 50px 20px 0 20px;
+    }
+    .join{
+        padding-bottom: 70px;
+    }
+    .serv_columns{
+        padding-top: 50px;
+    }
+    .fac_row{
+        gap: 50px;
+    }
+    .advant{
+        padding-bottom: 0;
+    }
+    .advantages{
+        padding: 20px;
+    }
+    .main_row{
+        padding: 70px 20px 0 20px;
+    }
+}
+// =========================993px=================
+@media screen and (max-width: 993px){
+    .main-container{
+        max-width: 993px;
+    }
+    .advant{
+        padding-bottom: 0;
+    }
+}
+// =================769px=============================
+@media screen and (max-width: 769px){
+    .container{
+        text-align: center;
+    }
+    .serv_columns{
+        padding: 200px 50px 0 50px;
+    }
+    .fac_columns{
+        padding-top: 60px;
+    }
+    .comm_columns{
+        padding-top: 50px;
+    }
+    .advant_columns{
+        padding-top: 50px;
+    }
+    .advantages{
+        padding-bottom: 60px;
+    }
+    .community{
+        padding-top: 70px;
+        display: grid;
+        justify-items: center;
+    }
+    .facilities_title{
+        padding-top: 70px;
+    }
+    .footer_about{
+        display: block;
+        text-align: center;
+        line-height: 30px;
+    }
+    .about_links{
+        display: block;
+    }
+    .footer_logo_text{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           flex-wrap: wrap;
+    }
+    .footer{
+        padding: 20px;
+    }
+    .footer_row{
+        justify-content: center;
+        gap: 70px;
+    }
+    .comm_row{
+        justify-content: center;
+    }
+    .fac_row{
+        justify-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+    .join{
+        display: grid;
+        justify-items: center;
+    }
+    .card{
+        margin-top: 90px;
+        left: 15%;
+        background-color: rgba(1, 1, 1, 0.3);
+        color: rgb(175, 174, 174);
+        display: grid;
+    }
+    .services{
+        padding-top: 30px;
+    }
+    .serv_row{
+        display: grid;
+        justify-items: center;
+    }
+    .header{
+        padding:  20px;
+    }
+    .main_row{
+        justify-content: center;
+    }
+    .main_sec{
+        background: url(../img/main-bg.jpg) 80% 100%/cover no-repeat;
+    }
+    .advantages{
+        padding: 50px;
+    }
+    .facilities{
+        padding: 50px;
+    }
+}
+// ===================426px=================
+@media screen and (max-width: 426px){
+    .serv_columns{
+        padding-top: 400px 50px 0 50px;
+    }
+    .footer_container{
+        width: 100%;
+    }
+}
